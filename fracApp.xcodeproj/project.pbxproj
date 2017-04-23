@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B9F817C1EACEC9000509AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F817B1EACEC9000509AAD /* AppDelegate.swift */; };
+		5B9F817E1EACEC9000509AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F817D1EACEC9000509AAD /* ViewController.swift */; };
+		5B9F81811EACEC9000509AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F817F1EACEC9000509AAD /* Main.storyboard */; };
+		5B9F81831EACEC9000509AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F81821EACEC9000509AAD /* Assets.xcassets */; };
+		5B9F81861EACEC9000509AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */; };
+		5B9F81911EACEC9000509AAD /* fracAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F81901EACEC9000509AAD /* fracAppTests.swift */; };
+		5B9F819C1EACEC9000509AAD /* fracAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B9F818D1EACEC9000509AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B9F81701EACEC9000509AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B9F81771EACEC9000509AAD;
+			remoteInfo = fracApp;
+		};
+		5B9F81981EACEC9000509AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B9F81701EACEC9000509AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B9F81771EACEC9000509AAD;
+			remoteInfo = fracApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B9F81781EACEC9000509AAD /* fracApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fracApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F817B1EACEC9000509AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B9F817D1EACEC9000509AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B9F81801EACEC9000509AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B9F81821EACEC9000509AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B9F81851EACEC9000509AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B9F81871EACEC9000509AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9F818C1EACEC9000509AAD /* fracAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fracAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F81901EACEC9000509AAD /* fracAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fracAppTests.swift; sourceTree = "<group>"; };
+		5B9F81921EACEC9000509AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9F81971EACEC9000509AAD /* fracAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fracAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fracAppUITests.swift; sourceTree = "<group>"; };
+		5B9F819D1EACEC9000509AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B9F81751EACEC9000509AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F81891EACEC9000509AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F81941EACEC9000509AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B9F816F1EACEC9000509AAD = {
+			isa = PBXGroup;
+			children = (
+				5B9F817A1EACEC9000509AAD /* fracApp */,
+				5B9F818F1EACEC9000509AAD /* fracAppTests */,
+				5B9F819A1EACEC9000509AAD /* fracAppUITests */,
+				5B9F81791EACEC9000509AAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B9F81791EACEC9000509AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F81781EACEC9000509AAD /* fracApp.app */,
+				5B9F818C1EACEC9000509AAD /* fracAppTests.xctest */,
+				5B9F81971EACEC9000509AAD /* fracAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B9F817A1EACEC9000509AAD /* fracApp */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F817B1EACEC9000509AAD /* AppDelegate.swift */,
+				5B9F817D1EACEC9000509AAD /* ViewController.swift */,
+				5B9F817F1EACEC9000509AAD /* Main.storyboard */,
+				5B9F81821EACEC9000509AAD /* Assets.xcassets */,
+				5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */,
+				5B9F81871EACEC9000509AAD /* Info.plist */,
+			);
+			path = fracApp;
+			sourceTree = "<group>";
+		};
+		5B9F818F1EACEC9000509AAD /* fracAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F81901EACEC9000509AAD /* fracAppTests.swift */,
+				5B9F81921EACEC9000509AAD /* Info.plist */,
+			);
+			path = fracAppTests;
+			sourceTree = "<group>";
+		};
+		5B9F819A1EACEC9000509AAD /* fracAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */,
+				5B9F819D1EACEC9000509AAD /* Info.plist */,
+			);
+			path = fracAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B9F81771EACEC9000509AAD /* fracApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F81A01EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracApp" */;
+			buildPhases = (
+				5B9F81741EACEC9000509AAD /* Sources */,
+				5B9F81751EACEC9000509AAD /* Frameworks */,
+				5B9F81761EACEC9000509AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fracApp;
+			productName = fracApp;
+			productReference = 5B9F81781EACEC9000509AAD /* fracApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B9F818B1EACEC9000509AAD /* fracAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F81A31EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppTests" */;
+			buildPhases = (
+				5B9F81881EACEC9000509AAD /* Sources */,
+				5B9F81891EACEC9000509AAD /* Frameworks */,
+				5B9F818A1EACEC9000509AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B9F818E1EACEC9000509AAD /* PBXTargetDependency */,
+			);
+			name = fracAppTests;
+			productName = fracAppTests;
+			productReference = 5B9F818C1EACEC9000509AAD /* fracAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B9F81961EACEC9000509AAD /* fracAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B9F81A61EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppUITests" */;
+			buildPhases = (
+				5B9F81931EACEC9000509AAD /* Sources */,
+				5B9F81941EACEC9000509AAD /* Frameworks */,
+				5B9F81951EACEC9000509AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B9F81991EACEC9000509AAD /* PBXTargetDependency */,
+			);
+			name = fracAppUITests;
+			productName = fracAppUITests;
+			productReference = 5B9F81971EACEC9000509AAD /* fracAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B9F81701EACEC9000509AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "José Eduardo Vieira Morango";
+				TargetAttributes = {
+					5B9F81771EACEC9000509AAD = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 89W7776J34;
+						ProvisioningStyle = Automatic;
+					};
+					5B9F818B1EACEC9000509AAD = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 89W7776J34;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B9F81771EACEC9000509AAD;
+					};
+					5B9F81961EACEC9000509AAD = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 89W7776J34;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B9F81771EACEC9000509AAD;
+					};
+				};
+			};
+			buildConfigurationList = 5B9F81731EACEC9000509AAD /* Build configuration list for PBXProject "fracApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B9F816F1EACEC9000509AAD;
+			productRefGroup = 5B9F81791EACEC9000509AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B9F81771EACEC9000509AAD /* fracApp */,
+				5B9F818B1EACEC9000509AAD /* fracAppTests */,
+				5B9F81961EACEC9000509AAD /* fracAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B9F81761EACEC9000509AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F81861EACEC9000509AAD /* LaunchScreen.storyboard in Resources */,
+				5B9F81831EACEC9000509AAD /* Assets.xcassets in Resources */,
+				5B9F81811EACEC9000509AAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F818A1EACEC9000509AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F81951EACEC9000509AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B9F81741EACEC9000509AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F817E1EACEC9000509AAD /* ViewController.swift in Sources */,
+				5B9F817C1EACEC9000509AAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F81881EACEC9000509AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F81911EACEC9000509AAD /* fracAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9F81931EACEC9000509AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B9F819C1EACEC9000509AAD /* fracAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B9F818E1EACEC9000509AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B9F81771EACEC9000509AAD /* fracApp */;
+			targetProxy = 5B9F818D1EACEC9000509AAD /* PBXContainerItemProxy */;
+		};
+		5B9F81991EACEC9000509AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B9F81771EACEC9000509AAD /* fracApp */;
+			targetProxy = 5B9F81981EACEC9000509AAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B9F817F1EACEC9000509AAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B9F81801EACEC9000509AAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B9F81851EACEC9000509AAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B9F819E1EACEC9000509AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B9F819F1EACEC9000509AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B9F81A11EACEC9000509AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89W7776J34;
+				INFOPLIST_FILE = fracApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edvmorango.fracApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5B9F81A21EACEC9000509AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 89W7776J34;
+				INFOPLIST_FILE = fracApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edvmorango.fracApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5B9F81A41EACEC9000509AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 89W7776J34;
+				INFOPLIST_FILE = fracAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edvmorango.fracAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fracApp.app/fracApp";
+			};
+			name = Debug;
+		};
+		5B9F81A51EACEC9000509AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 89W7776J34;
+				INFOPLIST_FILE = fracAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edvmorango.fracAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fracApp.app/fracApp";
+			};
+			name = Release;
+		};
+		5B9F81A71EACEC9000509AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 89W7776J34;
+				INFOPLIST_FILE = fracAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edvmorango.fracAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = fracApp;
+			};
+			name = Debug;
+		};
+		5B9F81A81EACEC9000509AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 89W7776J34;
+				INFOPLIST_FILE = fracAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edvmorango.fracAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = fracApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B9F81731EACEC9000509AAD /* Build configuration list for PBXProject "fracApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F819E1EACEC9000509AAD /* Debug */,
+				5B9F819F1EACEC9000509AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B9F81A01EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F81A11EACEC9000509AAD /* Debug */,
+				5B9F81A21EACEC9000509AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B9F81A31EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F81A41EACEC9000509AAD /* Debug */,
+				5B9F81A51EACEC9000509AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B9F81A61EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B9F81A71EACEC9000509AAD /* Debug */,
+				5B9F81A81EACEC9000509AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B9F81701EACEC9000509AAD /* Project object */;
+}
