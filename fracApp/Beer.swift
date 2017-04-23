@@ -7,26 +7,23 @@
 //
 
 import Foundation
-import ObjectMapper
+import Gloss
 
-struct Beer: Mappable{
+struct Beer: Decodable{
     
-    var id : Int!
-    var name: String!
-    var description: String!
-    var tagline: String!
-    var url: String!
+    var id : Int
+    var name: String
+    var description: String
+    var tagline: String
+    var url: String
     
-    init?(map: Map) {}
-    
-    mutating func mapping(map: Map) {
-        id <- map["id"]
-        name <- map["name"]
-        description <- map["description"]
-        tagline <- map["tagline"]
-        url <- map["url"]
+    init?(json: JSON) {
+        self.id = ("id" <~~ json)!
+        self.name = ("name" <~~ json)!
+        self.description = ("description" <~~ json)!
+        self.tagline = ("tagline" <~~ json)!
+        self.url = ("image_url" <~~ json)!
         
     }
-
 
 }

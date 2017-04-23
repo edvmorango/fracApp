@@ -20,7 +20,7 @@ target 'fracApp' do
 	pod 'Alamofire'
 	pod 'Moya/RxSwift', '~> 8.0.3'
 	pod 'SDWebImage'
-	pod 'Moya-ObjectMapper/RxSwift'
+	pod 'Gloss'
 end
 
 
