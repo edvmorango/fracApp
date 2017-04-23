@@ -14,6 +14,7 @@
 		5B9F81861EACEC9000509AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */; };
 		5B9F81911EACEC9000509AAD /* fracAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F81901EACEC9000509AAD /* fracAppTests.swift */; };
 		5B9F819C1EACEC9000509AAD /* fracAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */; };
+		5BDA8CDE1EAD2094006D525C /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA8CDD1EAD2094006D525C /* Beer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5B9F81971EACEC9000509AAD /* fracAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fracAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fracAppUITests.swift; sourceTree = "<group>"; };
 		5B9F819D1EACEC9000509AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDA8CDD1EAD2094006D525C /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				5B9F817B1EACEC9000509AAD /* AppDelegate.swift */,
-				5B9F817D1EACEC9000509AAD /* ViewController.swift */,
-				5B9F817F1EACEC9000509AAD /* Main.storyboard */,
-				5B9F81821EACEC9000509AAD /* Assets.xcassets */,
-				5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */,
-				5B9F81871EACEC9000509AAD /* Info.plist */,
+				5BDA8CD21EAD1871006D525C /* Modules */,
+				5BDA8CCE1EAD0048006D525C /* Entities */,
+				5BDA8CD31EAD1899006D525C /* Utils */,
+				5BDA8CD11EAD0120006D525C /* Resources */,
 			);
 			path = fracApp;
 			sourceTree = "<group>";
@@ -123,6 +124,120 @@
 				5B9F819D1EACEC9000509AAD /* Info.plist */,
 			);
 			path = fracAppUITests;
+			sourceTree = "<group>";
+		};
+		5BDA8CCB1EAD0028006D525C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F817D1EACEC9000509AAD /* ViewController.swift */,
+				5B9F817F1EACEC9000509AAD /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5BDA8CCE1EAD0048006D525C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA8CDD1EAD2094006D525C /* Beer.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		5BDA8CD11EAD0120006D525C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B9F81821EACEC9000509AAD /* Assets.xcassets */,
+				5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */,
+				5B9F81871EACEC9000509AAD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5BDA8CD21EAD1871006D525C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA8CD41EAD18AC006D525C /* MainView */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		5BDA8CD31EAD1899006D525C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA8CD91EAD1DE1006D525C /* DataManagers */,
+				5BDA8CDC1EAD1DFA006D525C /* Protocols */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5BDA8CD41EAD18AC006D525C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA8CCB1EAD0028006D525C /* View */,
+				5BDA8CD51EAD1DA4006D525C /* Presenter */,
+				5BDA8CD81EAD1DBF006D525C /* Router */,
+				5BDA8CD71EAD1DB3006D525C /* Interactor */,
+				5BDA8CD61EAD1DA9006D525C /* Contract */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		5BDA8CD51EAD1DA4006D525C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		5BDA8CD61EAD1DA9006D525C /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Contract;
+			sourceTree = "<group>";
+		};
+		5BDA8CD71EAD1DB3006D525C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		5BDA8CD81EAD1DBF006D525C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		5BDA8CD91EAD1DE1006D525C /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDA8CDA1EAD1DEB006D525C /* API */,
+				5BDA8CDB1EAD1DF1006D525C /* Local */,
+			);
+			name = DataManagers;
+			sourceTree = "<group>";
+		};
+		5BDA8CDA1EAD1DEB006D525C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		5BDA8CDB1EAD1DF1006D525C /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		5BDA8CDC1EAD1DFA006D525C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9F817E1EACEC9000509AAD /* ViewController.swift in Sources */,
+				5BDA8CDE1EAD2094006D525C /* Beer.swift in Sources */,
 				5B9F817C1EACEC9000509AAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +630,7 @@
 				5B9F81A21EACEC9000509AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B9F81A31EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +639,7 @@
 				5B9F81A51EACEC9000509AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B9F81A61EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +648,7 @@
 				5B9F81A81EACEC9000509AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
