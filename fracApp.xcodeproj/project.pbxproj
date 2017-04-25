@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4875D7CD507EF0E54DE914F1 /* Pods_fracAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6580C3EC704797EFF8FD2E4E /* Pods_fracAppUITests.framework */; };
 		5B44965F1EAD3F41003CAFB1 /* Response+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44965E1EAD3F41003CAFB1 /* Response+JSON.swift */; };
-		5B4496611EAD5535003CAFB1 /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4496601EAD5535003CAFB1 /* MainContract.swift */; };
+		5B4496611EAD5535003CAFB1 /* MainBeerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4496601EAD5535003CAFB1 /* MainBeerContract.swift */; };
 		5B4496631EAD5899003CAFB1 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4496621EAD5899003CAFB1 /* ViewProtocols.swift */; };
 		5B9F817C1EACEC9000509AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F817B1EACEC9000509AAD /* AppDelegate.swift */; };
-		5B9F817E1EACEC9000509AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F817D1EACEC9000509AAD /* ViewController.swift */; };
+		5B9F817E1EACEC9000509AAD /* MainBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F817D1EACEC9000509AAD /* MainBeerViewController.swift */; };
 		5B9F81811EACEC9000509AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F817F1EACEC9000509AAD /* Main.storyboard */; };
 		5B9F81831EACEC9000509AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F81821EACEC9000509AAD /* Assets.xcassets */; };
 		5B9F81861EACEC9000509AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9F81841EACEC9000509AAD /* LaunchScreen.storyboard */; };
 		5B9F81911EACEC9000509AAD /* fracAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F81901EACEC9000509AAD /* fracAppTests.swift */; };
 		5B9F819C1EACEC9000509AAD /* fracAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */; };
+		5BA787071EAD5E5B00F558E1 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA787061EAD5E5B00F558E1 /* ReusableView.swift */; };
+		5BA7870B1EAD6A1000F558E1 /* MainBeerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7870A1EAD6A1000F558E1 /* MainBeerRouter.swift */; };
+		5BA7870D1EAD6DEA00F558E1 /* MainBeerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7870C1EAD6DEA00F558E1 /* MainBeerPresenter.swift */; };
+		5BA7870F1EAD805E00F558E1 /* MainBeerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA7870E1EAD805E00F558E1 /* MainBeerInteractor.swift */; };
+		5BA787121EAE70EB00F558E1 /* RooContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA787111EAE70EB00F558E1 /* RooContract.swift */; };
+		5BA787141EAE70FB00F558E1 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA787131EAE70FB00F558E1 /* RootRouter.swift */; };
 		5BDA8CDE1EAD2094006D525C /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA8CDD1EAD2094006D525C /* Beer.swift */; };
 		5BDA8CE01EAD2549006D525C /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA8CDF1EAD2549006D525C /* BeerAPI.swift */; };
 		5BDA8CE21EAD2B39006D525C /* BeerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA8CE11EAD2B39006D525C /* BeerAPIManager.swift */; };
+		64DF784A35C263D38345ABD1 /* Pods_fracApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12DD98799E2A057F914B18EB /* Pods_fracApp.framework */; };
+		D6A228F100363E9C9503A38D /* Pods_fracAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924911CE2B12ABC1A18BACAA /* Pods_fracAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12DD98799E2A057F914B18EB /* Pods_fracApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fracApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B44965E1EAD3F41003CAFB1 /* Response+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+JSON.swift"; sourceTree = "<group>"; };
-		5B4496601EAD5535003CAFB1 /* MainContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+		5B4496601EAD5535003CAFB1 /* MainBeerContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBeerContract.swift; sourceTree = "<group>"; };
 		5B4496621EAD5899003CAFB1 /* ViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		5B9F81781EACEC9000509AAD /* fracApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fracApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9F817B1EACEC9000509AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B9F817D1EACEC9000509AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B9F817D1EACEC9000509AAD /* MainBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBeerViewController.swift; sourceTree = "<group>"; };
 		5B9F81801EACEC9000509AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B9F81821EACEC9000509AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9F81851EACEC9000509AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,9 +66,23 @@
 		5B9F81971EACEC9000509AAD /* fracAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fracAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9F819B1EACEC9000509AAD /* fracAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fracAppUITests.swift; sourceTree = "<group>"; };
 		5B9F819D1EACEC9000509AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BA787061EAD5E5B00F558E1 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		5BA7870A1EAD6A1000F558E1 /* MainBeerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBeerRouter.swift; sourceTree = "<group>"; };
+		5BA7870C1EAD6DEA00F558E1 /* MainBeerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBeerPresenter.swift; sourceTree = "<group>"; };
+		5BA7870E1EAD805E00F558E1 /* MainBeerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBeerInteractor.swift; sourceTree = "<group>"; };
+		5BA787111EAE70EB00F558E1 /* RooContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RooContract.swift; sourceTree = "<group>"; };
+		5BA787131EAE70FB00F558E1 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		5BDA8CDD1EAD2094006D525C /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		5BDA8CDF1EAD2549006D525C /* BeerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
 		5BDA8CE11EAD2B39006D525C /* BeerAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerAPIManager.swift; sourceTree = "<group>"; };
+		6580C3EC704797EFF8FD2E4E /* Pods_fracAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fracAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEFF3AC49DC769690047A56 /* Pods-fracAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fracAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fracAppTests/Pods-fracAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		924911CE2B12ABC1A18BACAA /* Pods_fracAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fracAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FEAE775AE5C56A7B8DA3EF /* Pods-fracAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fracAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fracAppUITests/Pods-fracAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3103BB74F567D434F694043 /* Pods-fracAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fracAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fracAppTests/Pods-fracAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDE820BF224729BB8CFA7CB3 /* Pods-fracAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fracAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fracAppUITests/Pods-fracAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1839788C507645A9C7DAF2C /* Pods-fracApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fracApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-fracApp/Pods-fracApp.release.xcconfig"; sourceTree = "<group>"; };
+		E7797A2BA693F285DAE8DFB3 /* Pods-fracApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fracApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fracApp/Pods-fracApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DF784A35C263D38345ABD1 /* Pods_fracApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A228F100363E9C9503A38D /* Pods_fracAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,16 +106,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4875D7CD507EF0E54DE914F1 /* Pods_fracAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2812FCBDAFA0248AEFDCB5DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7797A2BA693F285DAE8DFB3 /* Pods-fracApp.debug.xcconfig */,
+				E1839788C507645A9C7DAF2C /* Pods-fracApp.release.xcconfig */,
+				6CEFF3AC49DC769690047A56 /* Pods-fracAppTests.debug.xcconfig */,
+				B3103BB74F567D434F694043 /* Pods-fracAppTests.release.xcconfig */,
+				CDE820BF224729BB8CFA7CB3 /* Pods-fracAppUITests.debug.xcconfig */,
+				A8FEAE775AE5C56A7B8DA3EF /* Pods-fracAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B44965D1EAD3F18003CAFB1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				5B44965E1EAD3F41003CAFB1 /* Response+JSON.swift */,
+				5BA787061EAD5E5B00F558E1 /* ReusableView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -101,6 +142,8 @@
 				5B9F818F1EACEC9000509AAD /* fracAppTests */,
 				5B9F819A1EACEC9000509AAD /* fracAppUITests */,
 				5B9F81791EACEC9000509AAD /* Products */,
+				2812FCBDAFA0248AEFDCB5DF /* Pods */,
+				B47E17390892AE2FD0230BC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,10 +187,19 @@
 			path = fracAppUITests;
 			sourceTree = "<group>";
 		};
+		5BA787101EAE70D700F558E1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5BA787111EAE70EB00F558E1 /* RooContract.swift */,
+				5BA787131EAE70FB00F558E1 /* RootRouter.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
 		5BDA8CCB1EAD0028006D525C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5B9F817D1EACEC9000509AAD /* ViewController.swift */,
+				5B9F817D1EACEC9000509AAD /* MainBeerViewController.swift */,
 				5B9F817F1EACEC9000509AAD /* Main.storyboard */,
 			);
 			name = View;
@@ -174,6 +226,7 @@
 		5BDA8CD21EAD1871006D525C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5BA787101EAE70D700F558E1 /* Root */,
 				5BDA8CD41EAD18AC006D525C /* MainView */,
 			);
 			name = Modules;
@@ -204,6 +257,7 @@
 		5BDA8CD51EAD1DA4006D525C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				5BA7870C1EAD6DEA00F558E1 /* MainBeerPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -211,7 +265,7 @@
 		5BDA8CD61EAD1DA9006D525C /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				5B4496601EAD5535003CAFB1 /* MainContract.swift */,
+				5B4496601EAD5535003CAFB1 /* MainBeerContract.swift */,
 			);
 			name = Contract;
 			sourceTree = "<group>";
@@ -219,6 +273,7 @@
 		5BDA8CD71EAD1DB3006D525C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				5BA7870E1EAD805E00F558E1 /* MainBeerInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -226,6 +281,7 @@
 		5BDA8CD81EAD1DBF006D525C /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				5BA7870A1EAD6A1000F558E1 /* MainBeerRouter.swift */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -263,6 +319,16 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		B47E17390892AE2FD0230BC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12DD98799E2A057F914B18EB /* Pods_fracApp.framework */,
+				924911CE2B12ABC1A18BACAA /* Pods_fracAppTests.framework */,
+				6580C3EC704797EFF8FD2E4E /* Pods_fracAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,9 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9F81A01EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracApp" */;
 			buildPhases = (
+				45048D49AF1F6BEC26DD13D7 /* [CP] Check Pods Manifest.lock */,
 				5B9F81741EACEC9000509AAD /* Sources */,
 				5B9F81751EACEC9000509AAD /* Frameworks */,
 				5B9F81761EACEC9000509AAD /* Resources */,
+				5569F26EDC7FA980AB6EE045 /* [CP] Embed Pods Frameworks */,
+				99775245DC7F3A42822C455F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,9 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9F81A31EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppTests" */;
 			buildPhases = (
+				41C821AFAC254892CC0CEF5E /* [CP] Check Pods Manifest.lock */,
 				5B9F81881EACEC9000509AAD /* Sources */,
 				5B9F81891EACEC9000509AAD /* Frameworks */,
 				5B9F818A1EACEC9000509AAD /* Resources */,
+				4C289CAE83FEA655D81A40F0 /* [CP] Embed Pods Frameworks */,
+				C997D14AB40F274B7E4034F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,9 +377,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B9F81A61EACEC9000509AAD /* Build configuration list for PBXNativeTarget "fracAppUITests" */;
 			buildPhases = (
+				A9E181998E44ED00411D791F /* [CP] Check Pods Manifest.lock */,
 				5B9F81931EACEC9000509AAD /* Sources */,
 				5B9F81941EACEC9000509AAD /* Frameworks */,
 				5B9F81951EACEC9000509AAD /* Resources */,
+				CF87DC607986CFC0801E7C19 /* [CP] Embed Pods Frameworks */,
+				4499C1859F76B81149793695 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,19 +470,163 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41C821AFAC254892CC0CEF5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4499C1859F76B81149793695 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fracAppUITests/Pods-fracAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45048D49AF1F6BEC26DD13D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C289CAE83FEA655D81A40F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fracAppTests/Pods-fracAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5569F26EDC7FA980AB6EE045 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fracApp/Pods-fracApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99775245DC7F3A42822C455F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fracApp/Pods-fracApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E181998E44ED00411D791F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C997D14AB40F274B7E4034F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fracAppTests/Pods-fracAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF87DC607986CFC0801E7C19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fracAppUITests/Pods-fracAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B9F81741EACEC9000509AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA787071EAD5E5B00F558E1 /* ReusableView.swift in Sources */,
 				5BDA8CE21EAD2B39006D525C /* BeerAPIManager.swift in Sources */,
 				5BDA8CE01EAD2549006D525C /* BeerAPI.swift in Sources */,
-				5B9F817E1EACEC9000509AAD /* ViewController.swift in Sources */,
+				5B9F817E1EACEC9000509AAD /* MainBeerViewController.swift in Sources */,
+				5BA787141EAE70FB00F558E1 /* RootRouter.swift in Sources */,
 				5BDA8CDE1EAD2094006D525C /* Beer.swift in Sources */,
+				5BA787121EAE70EB00F558E1 /* RooContract.swift in Sources */,
+				5BA7870B1EAD6A1000F558E1 /* MainBeerRouter.swift in Sources */,
 				5B44965F1EAD3F41003CAFB1 /* Response+JSON.swift in Sources */,
 				5B9F817C1EACEC9000509AAD /* AppDelegate.swift in Sources */,
+				5BA7870D1EAD6DEA00F558E1 /* MainBeerPresenter.swift in Sources */,
+				5BA7870F1EAD805E00F558E1 /* MainBeerInteractor.swift in Sources */,
 				5B4496631EAD5899003CAFB1 /* ViewProtocols.swift in Sources */,
-				5B4496611EAD5535003CAFB1 /* MainContract.swift in Sources */,
+				5B4496611EAD5535003CAFB1 /* MainBeerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +776,7 @@
 		};
 		5B9F81A11EACEC9000509AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7797A2BA693F285DAE8DFB3 /* Pods-fracApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89W7776J34;
@@ -570,6 +790,7 @@
 		};
 		5B9F81A21EACEC9000509AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1839788C507645A9C7DAF2C /* Pods-fracApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89W7776J34;
@@ -583,6 +804,7 @@
 		};
 		5B9F81A41EACEC9000509AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEFF3AC49DC769690047A56 /* Pods-fracAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +820,7 @@
 		};
 		5B9F81A51EACEC9000509AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3103BB74F567D434F694043 /* Pods-fracAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -613,6 +836,7 @@
 		};
 		5B9F81A71EACEC9000509AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE820BF224729BB8CFA7CB3 /* Pods-fracAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 89W7776J34;
@@ -627,6 +851,7 @@
 		};
 		5B9F81A81EACEC9000509AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FEAE775AE5C56A7B8DA3EF /* Pods-fracAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 89W7776J34;
