@@ -16,15 +16,17 @@ class MainBeerInteractor : MainBeerUseCase{
     private var bag = DisposeBag()
     var api = BeerAPIManager()
 
-    func fetchBeers() {
+    func fetchBeers(name: String? = nil) {
         
-        api.listBeers()
+        api.listBeers(name: name)
             .subscribe(onNext:{
                          self.output.onFetchSuccess($0)
                        },
-                       onError: {
-                         self.output.onFetchFailure(message: $0.localizedDescription)
+                       onError: { _ in
+                         self.output.onFetchFailure()
                        })
                     .addDisposableTo(bag)
     }
+    
+    
 }

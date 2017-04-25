@@ -7,40 +7,67 @@
 //
 
 import UIKit
-
+import RxSwift
+import RxCocoa
+import SDWebImage
 class MainBeerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var presenter: MainBeerPresentation!
-
+    var bag = DisposeBag()
     var beers : [Beer] = []{
         didSet{
-            print("Aquii")
             tableView.reloadData()
         }
     }
+    
+    @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad()
-        print(beers.count)
+        setupLayout()
+        searchBar.rx.text.throttle(0.5, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] value in
+                self?.presenter.onSearchBy(name: value)})
+            .addDisposableTo(bag)
+    }
+    
+    func setupLayout(){
+        //MainBeerCell customization
+        tableView.separatorColor = UIColor.white
         
-    }
+        //SearchBar customization
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = UIColor(red: 74/255, green: 144/255, blue: 226/255, alpha: 1).cgColor
+        
+        //SearchBarText customization
+        let text: UITextField = searchBar.value(forKey: "searchField") as! UITextField
+        text.backgroundColor = UIColor(red: 107/255, green: 181/255, blue: 228/255, alpha: 1)
+        
+        let leftIcon = text.leftView as! UIImageView
+        leftIcon.image = leftIcon.image?.withRenderingMode(.alwaysTemplate)
+        leftIcon.tintColor = UIColor.white
+        
+        let rightIcon = text.value(forKey: "clearButton") as! UIButton
+        rightIcon.setImage(rightIcon.imageView?.image?.withRenderingMode(.alwaysTemplate), for: .normal)
+        rightIcon.tintColor = UIColor.white
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.onBeerSelected(beers[indexPath.row])
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return beers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let index = indexPath.row
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell.textLabel?.text = beers[index].name
-
+        let beer =  beers[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MainBeerCell
+        cell.lbName.text = beer.name
+        cell.lbDesc.text = beer.description
+        cell.imgBeer.sd_setImage(with: URL(string: beer.url))
         return cell
     }
 }
@@ -48,10 +75,11 @@ class MainBeerViewController: UIViewController, UITableViewDelegate, UITableView
 extension MainBeerViewController: MainBeerView {
     
     func showSearchResult(_ beers: [Beer]) {
+        print(beers.count)
         self.beers = beers
-    }
+    } 
 
-    func showCustomError(_ message: String?) {
+    func showCustomError() {
         
     }
     

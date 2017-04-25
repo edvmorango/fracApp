@@ -23,10 +23,7 @@ struct BeerAPIManager{
 
 extension BeerAPIManager{
     public func listBeers(name: String? = nil) -> Observable<[Beer]>{
-        return provider.request(BeerAPI.filteredBeers(name: name)).map{ xt in
-            print(xt.request?.url)
-            return xt
-            }
+        return provider.request(BeerAPI.filteredBeers(name: name))
                 .filterSuccessfulStatusCodes()
                 .map{ [Beer].from(jsonArray: $0.getJSONArray()) ?? []}
     }

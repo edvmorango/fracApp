@@ -41,6 +41,7 @@ extension BeerAPI: TargetType{
         case .beer : return nil
         case .filteredBeers(let name) :
             guard let uName = name else{ return nil }
+            if uName.isEmpty{ return nil}
             return ["beer_name" : uName.replacingOccurrences(of: " ", with: "_") ]
         }
     }

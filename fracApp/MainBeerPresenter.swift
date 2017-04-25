@@ -25,12 +25,11 @@ class MainBeerPresenter: MainBeerPresentation{
         }
     }
     
-    func viewDidLoad() {
-        interactor.fetchBeers()
-    }
+    func viewDidLoad() {}
+    
     
     func onSearchBy(name: String?) {
-        
+        interactor.fetchBeers(name: name)
         
     }
    
@@ -43,14 +42,13 @@ class MainBeerPresenter: MainBeerPresentation{
 
 
 extension MainBeerPresenter : MainBeerInteractorOutput{
-    func onFetchFailure(message: String) {
-    
-        // Vai invocar o reload
+    func onFetchFailure() {
+        
+        view?.showCustomError()
         
     }
 
     func onFetchSuccess(_ beers: [Beer]) {
-        print("Aqueo \(beers.count)")
         self.beers = beers
         
     }

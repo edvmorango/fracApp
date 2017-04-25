@@ -12,7 +12,7 @@ import UIKit
 protocol MainBeerView : class{
     var presenter : MainBeerPresentation! { get set }
     
-    func showCustomError(_ message: String?)
+    func showCustomError()
     func showSearchResult(_ beers: [Beer])
 }
 
@@ -32,12 +32,12 @@ protocol MainBeerPresentation : class{
 protocol MainBeerUseCase : class{
     weak var output: MainBeerInteractorOutput! {get set}
     
-    func fetchBeers()
+    func fetchBeers(name: String?)
 }
 
 protocol MainBeerInteractorOutput : class{
     func onFetchSuccess( _ beers: [Beer])
-    func onFetchFailure(message: String)
+    func onFetchFailure()
 }
 
 protocol MainBeerWireframe : class {
