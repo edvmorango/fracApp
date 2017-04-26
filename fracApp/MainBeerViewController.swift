@@ -73,6 +73,20 @@ class MainBeerViewController: UIViewController, UITableViewDelegate, UITableView
         cell.imgBeer.sd_setImage(with: URL(string: beer.url))
         return cell
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int{
+        var numOfSections: Int = 0
+        if beers.count > 0{
+            tableView.separatorStyle = .singleLine
+            numOfSections = 1
+            tableView.backgroundView = nil
+        }else{
+            let view = UINib(nibName: "EmptyTableView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
+            tableView.backgroundView  = view
+            tableView.separatorStyle  = .none
+        }
+        return numOfSections
+    }
 }
 
 extension MainBeerViewController: MainBeerView {
@@ -83,13 +97,12 @@ extension MainBeerViewController: MainBeerView {
 
     func showCustomError() {
         let alertController = UIAlertController(title: "Aviso", message: "Não foi possível se conectar a internet.", preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "Tentar novamente", style: .default, handler: { (pAlert) in
+        let action = UIAlertAction(title: "Tentar novamente", style: .default){ _ in
             self.searchObs.subscribe(onNext: {[weak self] value in
                     self?.presenter.onSearchBy(name: value)})
                 .addDisposableTo(self.bag)
-        })
-        alertController.addAction(defaultAction)
+        }
+        alertController.addAction(action)
         self.present(alertController, animated: true, completion: nil)
     }
-    
 }
