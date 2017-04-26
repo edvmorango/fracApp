@@ -12,12 +12,14 @@ import RxCocoa
 import SDWebImage
 class MainBeerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var presenter: MainBeerPresentation!
-    var bag = DisposeBag()
+    fileprivate var bag = DisposeBag()
     var beers : [Beer] = []{
         didSet{
             tableView.reloadData()
         }
     }
+    
+    fileprivate var searchObs : Observable<String?>!
     
     @IBOutlet weak var navItem: UINavigationItem!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -26,8 +28,9 @@ class MainBeerViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        searchBar.rx.text.throttle(0.5, scheduler: MainScheduler.instance)
-            .subscribe(onNext: { [weak self] value in
+        searchObs = searchBar.rx.text.throttle(0.5, scheduler: MainScheduler.instance).shareReplay(1)
+        
+        searchObs.subscribe(onNext: { [weak self] value in
                 self?.presenter.onSearchBy(name: value)})
             .addDisposableTo(bag)
     }
@@ -75,12 +78,18 @@ class MainBeerViewController: UIViewController, UITableViewDelegate, UITableView
 extension MainBeerViewController: MainBeerView {
     
     func showSearchResult(_ beers: [Beer]) {
-        print(beers.count)
         self.beers = beers
-    } 
+    }
 
     func showCustomError() {
-        
+        let alertController = UIAlertController(title: "Aviso", message: "Não foi possível se conectar a internet.", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "Tentar novamente", style: .default, handler: { (pAlert) in
+            self.searchObs.subscribe(onNext: {[weak self] value in
+                    self?.presenter.onSearchBy(name: value)})
+                .addDisposableTo(self.bag)
+        })
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }

@@ -9,14 +9,7 @@
 import UIKit
 class MainBeerRouter : MainBeerWireframe{
     
-    func presentDetails(forBeer beer: Beer) {
-    
-    }
-
     weak var viewController: UIViewController?
-
-
-    weak var view : UIViewController?
     
     static func assembleModule() -> UIViewController{
         
@@ -25,16 +18,16 @@ class MainBeerRouter : MainBeerWireframe{
         let presenter  = MainBeerPresenter()
         let router = MainBeerRouter()
         let interactor = MainBeerInteractor()
-        
+
         let navigation = UINavigationController(rootViewController: viewController)
-        
+
         viewController.presenter = presenter
         
         presenter.view = viewController
         presenter.router = router
         presenter.interactor = interactor
         
-        router.view = viewController
+        router.viewController = viewController
         
         interactor.output = presenter
         
@@ -42,4 +35,8 @@ class MainBeerRouter : MainBeerWireframe{
     }
     
     
+    func presentSingleBeer(forBeer beer: Beer) {
+        let singleBeerViewController = SingleBeerRouter.assembleModule(beer)
+        viewController?.navigationController!.pushViewController(singleBeerViewController, animated: false)
+    }
 }

@@ -27,33 +27,18 @@ class MainBeerPresenter: MainBeerPresentation{
     
     func viewDidLoad() {}
     
+    func onSearchBy(name: String?) { interactor.fetchBeers(name: name) }
     
-    func onSearchBy(name: String?) {
-        interactor.fetchBeers(name: name)
-        
-    }
-   
-    func onBeerSelected(_ beer: Beer) {
-       
-    }
-    
-
+    func onBeerSelected(_ beer: Beer) { router.presentSingleBeer(forBeer: beer) }
 }
 
 
 extension MainBeerPresenter : MainBeerInteractorOutput{
     func onFetchFailure() {
-        
         view?.showCustomError()
-        
     }
 
     func onFetchSuccess(_ beers: [Beer]) {
         self.beers = beers
-        
     }
-
-
-
-
 }

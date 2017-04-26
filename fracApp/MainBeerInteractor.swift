@@ -11,7 +11,6 @@ import RxSwift
 
 class MainBeerInteractor : MainBeerUseCase{
    
-  
     weak var output: MainBeerInteractorOutput!
     private var bag = DisposeBag()
     var api = BeerAPIManager()
@@ -27,6 +26,5 @@ class MainBeerInteractor : MainBeerUseCase{
                        })
                     .addDisposableTo(bag)
     }
-    
     
 }

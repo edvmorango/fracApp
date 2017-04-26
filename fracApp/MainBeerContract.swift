@@ -8,14 +8,12 @@
 
 import UIKit
 
-
 protocol MainBeerView : class{
     var presenter : MainBeerPresentation! { get set }
     
     func showCustomError()
     func showSearchResult(_ beers: [Beer])
 }
-
 
 protocol MainBeerPresentation : class{
     
@@ -42,10 +40,9 @@ protocol MainBeerInteractorOutput : class{
 
 protocol MainBeerWireframe : class {
     weak var viewController : UIViewController? {get set}
-    
-    func presentDetails(forBeer beer: Beer)
-    
+
+    func presentSingleBeer(forBeer beer: Beer)
+
     static func assembleModule() -> UIViewController
-    
     
 }

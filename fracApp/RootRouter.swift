@@ -11,5 +11,6 @@ class RootRouter: RootWireframe {
     
     func presentMainBeerScreen(in window: UIWindow) {
         window.makeKeyAndVisible()
-        window.rootViewController = MainBeerRouter.assembleModule()    }
+        window.rootViewController = MainBeerRouter.assembleModule()
+    }
 }

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4875D7CD507EF0E54DE914F1 /* Pods_fracAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6580C3EC704797EFF8FD2E4E /* Pods_fracAppUITests.framework */; };
 		5B2D4E7B1EAFBAEA003898CC /* MainBeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D4E7A1EAFBAEA003898CC /* MainBeerCell.swift */; };
+		5B2D4E7F1EB007A2003898CC /* SingleBeer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2D4E7E1EB007A2003898CC /* SingleBeer.storyboard */; };
+		5B2D4E811EB007DD003898CC /* SingleBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D4E801EB007DD003898CC /* SingleBeerViewController.swift */; };
+		5B2D4E831EB0088D003898CC /* SingleBeerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D4E821EB0088D003898CC /* SingleBeerPresenter.swift */; };
+		5B2D4E851EB00B6F003898CC /* SingleBeerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D4E841EB00B6F003898CC /* SingleBeerRouter.swift */; };
 		5B44965F1EAD3F41003CAFB1 /* Response+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44965E1EAD3F41003CAFB1 /* Response+JSON.swift */; };
 		5B4496611EAD5535003CAFB1 /* MainBeerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4496601EAD5535003CAFB1 /* MainBeerContract.swift */; };
 		5B4496631EAD5899003CAFB1 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4496621EAD5899003CAFB1 /* ViewProtocols.swift */; };
@@ -53,6 +57,10 @@
 /* Begin PBXFileReference section */
 		12DD98799E2A057F914B18EB /* Pods_fracApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fracApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2D4E7A1EAFBAEA003898CC /* MainBeerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBeerCell.swift; sourceTree = "<group>"; };
+		5B2D4E7E1EB007A2003898CC /* SingleBeer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleBeer.storyboard; sourceTree = "<group>"; };
+		5B2D4E801EB007DD003898CC /* SingleBeerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleBeerViewController.swift; sourceTree = "<group>"; };
+		5B2D4E821EB0088D003898CC /* SingleBeerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleBeerPresenter.swift; sourceTree = "<group>"; };
+		5B2D4E841EB00B6F003898CC /* SingleBeerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleBeerRouter.swift; sourceTree = "<group>"; };
 		5B44965E1EAD3F41003CAFB1 /* Response+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+JSON.swift"; sourceTree = "<group>"; };
 		5B4496601EAD5535003CAFB1 /* MainBeerContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBeerContract.swift; sourceTree = "<group>"; };
 		5B4496621EAD5899003CAFB1 /* ViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
@@ -206,7 +214,6 @@
 				5BA7871A1EAF80CF00F558E1 /* View */,
 				5BA787191EAF80CA00F558E1 /* Presenter */,
 				5BA787181EAF80C600F558E1 /* Router */,
-				5BA787171EAF80BB00F558E1 /* Interactor */,
 				5BA787161EAF80B600F558E1 /* Contract */,
 			);
 			name = SingleBeerView;
@@ -220,16 +227,10 @@
 			name = Contract;
 			sourceTree = "<group>";
 		};
-		5BA787171EAF80BB00F558E1 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
 		5BA787181EAF80C600F558E1 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				5B2D4E841EB00B6F003898CC /* SingleBeerRouter.swift */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -237,6 +238,7 @@
 		5BA787191EAF80CA00F558E1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				5B2D4E821EB0088D003898CC /* SingleBeerPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -244,6 +246,8 @@
 		5BA7871A1EAF80CF00F558E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B2D4E801EB007DD003898CC /* SingleBeerViewController.swift */,
+				5B2D4E7E1EB007A2003898CC /* SingleBeer.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -502,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2D4E7F1EB007A2003898CC /* SingleBeer.storyboard in Resources */,
 				5B9F81861EACEC9000509AAD /* LaunchScreen.storyboard in Resources */,
 				5B9F81831EACEC9000509AAD /* Assets.xcassets in Resources */,
 				5B9F81811EACEC9000509AAD /* Main.storyboard in Resources */,
@@ -667,6 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2D4E831EB0088D003898CC /* SingleBeerPresenter.swift in Sources */,
 				5B2D4E7B1EAFBAEA003898CC /* MainBeerCell.swift in Sources */,
 				5BA787071EAD5E5B00F558E1 /* ReusableView.swift in Sources */,
 				5BDA8CE21EAD2B39006D525C /* BeerAPIManager.swift in Sources */,
@@ -676,7 +682,9 @@
 				5BDA8CDE1EAD2094006D525C /* Beer.swift in Sources */,
 				5BA787121EAE70EB00F558E1 /* RooContract.swift in Sources */,
 				5BA7870B1EAD6A1000F558E1 /* MainBeerRouter.swift in Sources */,
+				5B2D4E851EB00B6F003898CC /* SingleBeerRouter.swift in Sources */,
 				5B44965F1EAD3F41003CAFB1 /* Response+JSON.swift in Sources */,
+				5B2D4E811EB007DD003898CC /* SingleBeerViewController.swift in Sources */,
 				5B9F817C1EACEC9000509AAD /* AppDelegate.swift in Sources */,
 				5BA7871C1EAF819900F558E1 /* SingleBeerContract.swift in Sources */,
 				5BA7870D1EAD6DEA00F558E1 /* MainBeerPresenter.swift in Sources */,

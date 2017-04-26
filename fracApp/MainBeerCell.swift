@@ -9,10 +9,8 @@
 import UIKit
 
 class MainBeerCell : UITableViewCell{
-
-  
+    
     @IBOutlet weak var imgBeer: UIImageView!
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbDesc: UILabel!
-
 }
